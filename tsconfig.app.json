@@ -20,5 +20,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "nhost.js"]
+  "include": ["src", "api/nhost.js"]
 }
