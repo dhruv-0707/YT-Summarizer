@@ -22,7 +22,7 @@ function App() {
     }
 
     try {
-      const response = await fetch('https://yt-summarizer-4g1f.onrender.com/summarize', {
+      const response = await fetch('http://localhost:5000/summarize', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ youtubeUrl: url }),
