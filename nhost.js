@@ -3,7 +3,7 @@ import axios from 'axios'; // For making HTTP requests
 import cors from 'cors';
 
 const app = express();
-(cors({
+app.use(cors({
   origin: 'https://yt-summarizer-theta.vercel.app/', // Replace with your frontend's URL
 }));
 app.use(express.json());
