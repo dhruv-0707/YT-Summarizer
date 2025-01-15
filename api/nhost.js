@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // Replace with your n8n webhook URL
-const N8N_WORKFLOW_URL = 'http://3.107.184.201:5678/webhook/ytube';
+const N8N_WORKFLOW_URL = 'http://localhost:5678/webhook/ytube';
 
 app.post('/summarize', async (req, res) => {
   const { youtubeUrl } = req.body;
