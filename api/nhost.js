@@ -3,12 +3,8 @@ import axios from 'axios'; // For making HTTP requests
 import cors from 'cors';
 
 const app = express();
-const corsOptions = {
-  origin: 'https://yt-summarizer-theta.vercel.app/',
-  methods: ['GET', 'POST'],
-};
 const cors = require('cors');
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 // Replace with your n8n webhook URL
