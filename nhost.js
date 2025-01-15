@@ -4,7 +4,7 @@ import cors from 'cors';
 
 const app = express();
 app.use(cors({
-  origin: 'https://yt-summarizer-theta.vercel.app/', // Replace with your frontend's URL
+  origin: 'https://yt-summarizer-theta.vercel.app', // Replace with your frontend's URL
 }));
 app.use(express.json());
 
